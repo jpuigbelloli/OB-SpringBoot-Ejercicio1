@@ -1,0 +1,169 @@
+{
+	"info": {
+		"_postman_id": "e8fbaca8-0cbc-4bc0-95c2-2a51cb814007",
+		"name": "OB Spring REST Laptop",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/hola",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/hola",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"hola"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/laptops BUSCAR TODOS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/api/laptops",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"laptops"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/laptops/1 BUSCAR UNO",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/api/laptops/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"laptops",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/laptops CREAR",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"id\": 1,\r\n        \"model\": \"PavilionXD\",\r\n        \"brand\": \"HP\",\r\n        \"price\": 160000.0,\r\n        \"ram\": 16,\r\n        \"processor\": \"Ryzen 7\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/laptops",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"laptops"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/laptops ACTUALIZAR",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"id\": 1,\r\n        \"model\": \"Pavilion-XD-Postman\",\r\n        \"brand\": \"HP\",\r\n        \"price\": 160000.0,\r\n        \"ram\": 16,\r\n        \"processor\": \"Ryzen 7\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/laptops",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"laptops"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/laptops/1 BORRAR UNO",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/api/laptops/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"laptops",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/laptops/1 BORRAR TODOS",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/api/laptops/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"laptops",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
